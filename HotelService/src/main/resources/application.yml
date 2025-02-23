@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: HotelService
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xstore
+    username: blick_storehub
+    password: blick_storehub
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    show-sql: true   
+  hibernate:
+      ddl-auto: update
+server:
+  port: 8082
+
+
+
