@@ -30,7 +30,7 @@ public class UserController {
 	}
 
 	@GetMapping("/{Id}")
-	public ResponseEntity<User> createHotel(@PathVariable("Id") String userId){
+	public ResponseEntity<User> createUser(@PathVariable("Id") String userId){
 		return ResponseEntity.status(HttpStatus.OK).body(userService.getUser(userId));
 	}
 
